@@ -1,0 +1,313 @@
+atom-text-editor,
+atom-text-editor::shadow,
+atom-text-editor .gutter,
+atom-text-editor::shadow .gutter
+{
+	background-color: #FFFFFF;
+	color: #000000;
+}
+
+atom-text-editor .wrap-guide,
+atom-text-editor::shadow .wrap-guide
+{
+	background: rgba(0, 0, 0, 0.2);
+}
+
+atom-text-editor .invisible-character,
+atom-text-editor::shadow .invisible-character
+{
+	color: rgba(0, 0, 0, 0.7);
+}
+
+atom-text-editor.is-focused .cursor,
+atom-text-editor.is-focused::shadow .cursor
+{
+	border-color: #000000;
+}
+
+atom-text-editor.is-focused .selection .region,
+atom-text-editor.is-focused::shadow .selection .region
+{
+	background-color: #A6CBFF;
+}
+
+atom-text-editor.is-focused .line-number.cursor-line-no-selection,
+atom-text-editor.is-focused::shadow .line-number.cursor-line-no-selection,
+atom-text-editor.is-focused .line.cursor-line,
+atom-text-editor.is-focused::shadow .line.cursor-line
+{
+	background-color: rgba(255, 225, 53, 0.3);
+}
+
+.comment
+{
+	color      :rgba(0, 170, 0, 1);
+	font-weight: 600 !important;
+	font-weight: 100;
+	font-style :italic;
+}
+
+.meta.preprocessor, .keyword.control.import
+{
+	color: #7C4625;
+}
+
+.string
+{
+	color: #DD0004;
+}
+
+.constant.numeric
+{
+	color: #1C00CF;
+}
+
+.constant.language
+{
+	color: #C800A7;
+}
+
+.constant.character, .constant.other
+{
+	color: #26474B;
+}
+
+.variable.language
+{
+	color: #C800A7;
+}
+
+.variable.other
+{
+	color: #5C2699;
+}
+
+.keyword
+{
+	color: #C800A7;
+}
+
+.storage
+{
+	color: #C800A7;
+}
+
+.entity.name.class
+{
+	color: #5C2699;
+}
+
+.entity.other.inherited-class
+{
+	color: #5C2699;
+}
+
+.entity.name.function
+{
+	color: #000000;
+}
+
+.variable.parameter
+{
+	color: #000000;
+}
+
+.entity.name.tag
+{
+	color: #790EAD;
+}
+
+.entity.other.attribute-name
+{
+	color: #450084;
+}
+
+.support.function
+{
+	color: #2E0D6E;
+}
+
+.support.function.any-method
+{
+	color: #5832A4;
+}
+
+.support.constant
+{
+	color: #450084;
+}
+
+.support.type, .support.class
+{
+	color: #790EAD;
+}
+
+.support.other.variable
+{
+	color: #790EAD;
+}
+
+.invalid
+{
+    color: #F8F8F0;
+    background-color: #F92672;
+}
+
+.link
+{
+	color: #0E0EFF;
+	text-decoration: underline;
+}
+
+.markup.bold
+{
+	font-weight: bold;
+	color: #008D00;
+}
+
+.markup.italic
+{
+	font-style: italic;
+	color: #DD0004;
+}
+
+.markup.heading
+{
+	font-weight: bold;
+	color:#C800A7;
+}
+
+.markup.underline
+{
+	color: #0E0EFF;
+	text-decoration: underline;
+}
+
+.markup.quote
+{
+	font-style: italic;
+}
+
+.markup.list
+{
+	font-style: italic;
+	color: #6A0C98;
+}
+
+.markup.heading
+{
+	font-weight: bold;
+	color: #42257C;
+}
+
+.markup.quote
+{
+	color:#7C4625;
+}
+
+.markup.quote
+{
+	color:#7C4625;
+}
+
+atom-text-editor,
+atom-text-editor::shadow
+{
+    .line-number.cursor-line
+    {
+        color      : black;
+        font-weight: 600;
+    }
+
+    .line-number.git-line-modified
+    {
+        background-color: rgba(255, 140, 060,0.3);
+        border-left     : 2px solid rgb(255, 140, 060);
+    }
+
+    .bracket-matcher
+    {
+        -webkit-animation-duration: 0ms;
+    }
+
+    .meta.brace.round.js
+    {
+        color:red !important;
+    }
+
+    .editor-contents--private .scroll-view .lines
+    {
+        color:black;
+    }
+
+    .foldable>.icon-right
+    {
+        visibility: visible;
+        color     : black !important;
+    }
+
+    .support.class.js
+    {
+        color: rgb(245, 130, 050);
+        font-weight: 100;
+    }
+
+    .cursors
+    {
+        -webkit-transition: all 300ms ease-out;
+        opacity           : 1;
+    }
+
+    .blink-off
+    {
+        opacity           : 0;
+        -webkit-transition: all 300ms ease-out;
+    }
+
+    .cursors.blink-off .cursor
+    {
+        -webkit-transition: all 300ms ease-out;
+        display           :block;
+    }
+
+    .cursor-line
+    {
+        background-color: rgba(0,0,0,0.1) !important;
+    }
+
+	.highlights .highlight-selected .region, atom-text-editor .highlights .highlight-selected .region, atom-text-editor::shadow .highlights .highlight-selected .region
+	{
+	    border-color: black;
+	    border-style: dotted;
+	}
+
+	.lines
+	{
+		cursor: default;
+		width: auto !important;
+		-webkit-filter: saturate(150%);
+	}
+
+	.icon-right
+	{
+		visibility: visible !important;
+		color:black !important;
+  	}
+
+	.lines > :first-child > div, .lines
+	{
+		background-image:url('atom://architect/assets/grid.png') !important;
+		background-color: #C5F2D0 !important;
+		font-weight: 100;
+	}
+
+	.gutter,.line-number
+	{
+		background-color: #C5F2D0;
+		color: black;
+	}
+	.gutter
+	{
+		box-shadow: 0 0 1px black;
+	}
+}
