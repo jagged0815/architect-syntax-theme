@@ -3,7 +3,7 @@ atom-text-editor::shadow,
 atom-text-editor .gutter,
 atom-text-editor::shadow .gutter
 {
-	background-color: #FFFFFF;
+	background-color: #fff;
 	color: #000000;
 }
 
@@ -28,7 +28,7 @@ atom-text-editor.is-focused::shadow .cursor
 atom-text-editor.is-focused .selection .region,
 atom-text-editor.is-focused::shadow .selection .region
 {
-	background-color: #A6CBFF;
+	background-color: #fed8a4;
 }
 
 atom-text-editor.is-focused .line-number.cursor-line-no-selection,
@@ -284,17 +284,17 @@ atom-text-editor::shadow
 	.lines
 	{
 		cursor: default;
-		width: auto !important;
 		-webkit-filter: saturate(150%);
 	}
 
-	.icon-right
+	.foldable .icon-right
 	{
 		visibility: visible !important;
 		color:black !important;
   	}
 
-	.lines > :first-child > div, .lines
+	.lines > :first-child > div, .lines,
+	.lines > div, .lines
 	{
 		background-image:url('atom://Architect-Syntax-Theme/assets/grid.png') !important;
 		background-color: #C5F2D0 !important;
