@@ -3,7 +3,7 @@ atom-text-editor::shadow,
 atom-text-editor .gutter,
 atom-text-editor::shadow .gutter
 {
-	background-color: #fff;
+	background-color: white;
 	color: #000000;
 }
 
@@ -25,10 +25,16 @@ atom-text-editor.is-focused::shadow .cursor
 	border-color: #000000;
 }
 
-atom-text-editor.is-focused .selection .region,
-atom-text-editor.is-focused::shadow .selection .region
+atom-text-editor.has-selection .selection .region,
+atom-text-editor.has-selection::shadow .selection .region,
 {
-	background-color: #fed8a4;
+	background-color: rgba(251, 235, 212, 0.41);
+}
+
+atom-text-editor.is-focused .selection .region,
+atom-text-editor.is-focused::shadow .selection .region,
+{
+	background-color: #fbebd4;
 }
 
 atom-text-editor.is-focused .line-number.cursor-line-no-selection,
@@ -210,8 +216,8 @@ atom-text-editor.is-focused::shadow .line.cursor-line
 	color:#7C4625;
 }
 
-atom-text-editor,
-atom-text-editor::shadow
+atom-text-editor.editor:not(.mini),
+atom-text-editor.editor:not(.mini)::shadow
 {
     .line-number.cursor-line
     {
@@ -293,11 +299,10 @@ atom-text-editor::shadow
 		color:black !important;
   	}
 
-	.lines > :first-child > div, .lines,
 	.lines > div, .lines
 	{
 		background-image:url('atom://Architect-Syntax-Theme/assets/grid.png') !important;
-		background-color: #C5F2D0 !important;
+		background-color: #C5F2D0;
 		font-weight: 100;
 	}
 
